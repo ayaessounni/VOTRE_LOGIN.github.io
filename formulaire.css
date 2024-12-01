@@ -1,0 +1,47 @@
+body { font-family: Arial, sans-serif;
+ background-color: #f0f8ff; 
+ color: #333;
+ margin: 0;
+ padding: 0;}        
+ header { background-color: #af7f4c;
+ color: white;
+ padding: 10px;
+ text-align: center;}
+ main { padding: 20px;
+ text-align: center;}   
+ .start-link { display: inline-block;
+ padding: 10px 20px;
+ background-color: #008cba;
+ color: white;
+ text-decoration: none;
+ border-radius: 5px;         
+ margin-top: 10px; }
+ footer { background-color: #af7f4c;
+ color: white;
+ text-align: center;
+ padding: 10px ;
+ position: fixed;
+ width: 100%;
+ bottom: 0;}
+ .dashboard-main { display: grid;
+grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+gap: 20px; padding: 20px; } 
+.card { padding: 1rem; min-height: 7rem;
+background-color: #fff; 
+border-radius: 0.5rem; 
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+transition: transform 0.2s; } 
+.card:hover { transform: translateY(-10px); } 
+.card-1 { background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%); }
+@media (min-width: 768px) 
+{ .dashboard-main { grid-template-columns: repeat(4, 1fr); } 
+.card { grid-area: span 1 / span 2; } 
+.card-1 { grid-area: span 1 / span 4; } } 
+@media (min-width: 992px) 
+{ .card-2, .card-3 { grid-area: auto; }
+.card-4 { grid-area: 3 / 1 / 4 / 2; } 
+.card-5 { grid-area: 3 / 2 / 4 / 3; } 
+.card-6, .card-7 { grid-area: span 2 / auto; }
+.card-10, .card-11, .card-12, .card-13 { grid-area: auto; } }
+
+ 
